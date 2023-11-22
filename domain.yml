@@ -1,0 +1,378 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - emotion_happy
+  - emotion_sad
+  - bot_challenge
+  - stress
+  - emotion_anxiety
+  - emotion_anger
+  - emotion_surprise
+  - emotion_love
+  - emotion_fear
+  - coping_strategies
+  - resources
+  - relaxation
+  - emergency
+  - funny
+  - thanks
+  - goal_setting
+  - progress tracking
+  - stress_management
+  - self_reflection
+  - motivational_boost
+  - mindfulness_practices
+  - family_support
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hey there! How are you doing today?"
+  - text: "Hello! It's great to see you. How can I help?"
+  - text: "Hi! I hope you're having a fantastic day. How can I assist you?"
+  - text: "Greetings! How's everything going for you?"
+  - text: "Hello! I'm here and ready to chat. How can I support you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodbye! Take care."
+  - text: "Farewell! If you need anything else, feel free to ask."
+  - text: "See you later! Have a great day."
+  - text: "Goodbye! Wishing you a wonderful day ahead."
+  - text: "Until next time! Stay well."
+  - text: "Bye bye! If you ever need assistance, I'll be here."
+  - text: "Have a nice day! If you have more questions, just ask."
+  - text: "Cya! If there's anything else on your mind, let me know."
+  - text: "Goodbye! Remember, I'm here whenever you need support."
+  - text: "See you around! Feel free to return whenever you'd like."
+
+  
+  utter_affirm:
+  - text: "Great! I'm here to help in any way I can."
+  - text: "Yes, that makes sense. How can I assist you further?"
+  - text: "Of course! If you have any questions, feel free to ask."
+  - text: "Indeed! Is there anything specific you'd like to discuss?"
+  - text: "Absolutely. Let me know how I can support you."
+  - text: "Correct. If there's anything on your mind, I'm here to listen."
+  - text: "Sure thing! I'm here for you. What would you like to talk about?"
+  - text: "That sounds good. If you need assistance, just let me know."
+  - text: "Certainly. If you have any concerns, I'm here to address them."
+  - text: "Agreed. How can I be of service to you today?"
+
+  utter_deny:
+  - text: "Okay, no problem. If you ever change your mind, I'm here to chat."
+  - text: "Understood. Feel free to reach out whenever you feel comfortable."
+  - text: "Sure, we can shift the conversation. Is there another topic you'd like to discuss?"
+  - text: "That's fine. Let me know if there's anything else on your mind."
+  - text: "Got it. If there's a different subject you'd prefer, just let me know."
+  - text: "No worries. We can talk about something else if you'd like."
+  - text: "I respect that. If there's anything specific you want to talk about, I'm here."
+  - text: "Alright. If there's a different topic you're interested in, I'm all ears."
+  - text: "Fair enough. If there's anything else you'd like to discuss, just say the word."
+  - text: "I understand. Let me know if there's another area you'd like to explore in our conversation."
+
+  utter_emotion_happy:
+  - text: "Great, carry on!"
+  - text: "That's fantastic! I'm thrilled to hear you're feeling so positive."
+  - text: "Great to hear! Your happiness is contagious."
+  - text: "Amazing! It's wonderful to know you're in such a good mood."
+  - text: "Feeling like a king, huh? That's awesome!"
+  - text: "Wonderful! Keep spreading those good vibes."
+  - text: "I'm glad to hear you're feeling very good. Anything specific contributing to your mood?"
+  - text: "You're great! Keep embracing that positive energy."
+  - text: "Amazing! Your positivity is truly uplifting."
+  - text: "Saving the world one happy moment at a time! I love it."
+  - text: "Super stoked for you! What's making you feel so excited?"
+  - text: "Extremely good vibes! I'm here if you want to share the source of your happiness."
+  - text: "So, so perfect! Your happiness is important."
+  - text: "So good to hear! Celebrate those positive moments."
+  - text: "So perfect! Your joy matters, and I'm here to chat if you want to share more."
+  - text: "I'm thrilled to hear about your positive mental health progress!"
+  - text: "Engaging in self-care is a fantastic way to boost happiness. Keep it up!"
+  - text: "Reflecting on your achievements is a powerful source of joy. Celebrate those victories!"
+  - text: "A breakthrough in therapy is a significant win. I'm here to support your journey."
+  - text: "Connecting with supportive friends is a wonderful way to enhance mental health and happiness."
+  - text: "Finding joy in small victories is a beautiful mindset. What other victories are you proud of?"
+  - text: "Learning new coping mechanisms is a valuable step toward happiness and well-being."
+  - text: "Practicing mindfulness is a great way to nurture your mental health. Keep it up!"
+  - text: "Celebrating moments of self-love is a crucial aspect of overall happiness. You're doing great!"
+  - text: "Genuinely happy about positive changes? That's fantastic progress!"
+
+  utter_emotion_sad:
+  - text: "I'm sorry to hear that your day was horrible. If you'd like to talk about it, I'm here for you."
+  - text: "I'm here for you. It's okay to feel sad. Would you like to share more about what's on your mind?"
+  - text: "Feeling sad is tough. If you want to talk about it, I'm here to listen."
+  - text: "I'm sorry to hear that you don't feel well. Let me know if there's anything I can do to support you."
+  - text: "I understand. Feeling disappointed can be difficult. If you want to talk, I'm here."
+  - text: "I'm here to support you during this tough time. You're not alone."
+  - text: "Feeling super sad is tough. If you need someone to talk to, I'm here for you."
+  - text: "It's okay to feel sad. I'm here to offer support and a listening ear."
+  - text: "I'm sorry to hear that you're unhappy. If there's anything specific on your mind, I'm here to help."
+  - text: "I'm here to support you. If you're not feeling good, talking about it can sometimes help."
+  - text: "I'm sorry to hear that things are not very good. If you want to share more, I'm here to listen."
+  - text: "Feeling extremely sad is challenging. You're not alone, and I'm here to talk if you'd like."
+  - text: "I'm sorry to hear you're feeling so sad. Let's talk about it and see if I can offer some support."
+  - text: "Feeling so saad is tough. I'm here for you, and we can talk through it together."
+  - text: "It's okay to feel sad. If you'd like to share more about what's going on, I'm here to listen."
+  - text: "I'm sorry to hear that you're feeling so down about your mental health. I'm here to support you."
+  - text: "The challenges of your mental health journey can be overwhelming. I'm here to help you navigate through them."
+  - text: "It's understandable that past struggles can bring a sense of deep sadness. If you want to talk, I'm here to listen."
+  - text: "Coping with daily life can be tough, especially when it leaves you feeling sad. Let's talk about it if you're comfortable."
+  - text: "Persistent sadness is challenging. I'm here to provide support and a listening ear."
+  - text: "I'm sorry to hear that your mental health issues are contributing to constant sadness. Let's explore ways to cope together."
+  - text: "The stigma around mental health can indeed make you feel sad and isolated. You're not alone, and I'm here to support you."
+  - text: "Reflecting on your mental health journey may bring sadness. If you want to share your thoughts, I'm here to listen."
+  - text: "The impact of mental health on relationships can be difficult. If you'd like to talk about it, I'm here for you."
+  - text: "Struggling with self-compassion is tough. I'm here to provide support and guidance as you navigate through it."
+
+
+  utter_bot_challenge:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_stress:
+  - text: "I'm sorry to hear that you're feeling stressed. It's okay to feel this way. How can I support you?"
+  - text: "Feeling stressed is tough. Let's talk about it. What's on your mind?"
+  - text: "Stress can be overwhelming. If you want to share what's causing it, I'm here to listen."
+  - text: "I hear you. Stress is a common challenge. How can I assist you in managing it?"
+  - text: "Dealing with pressure can be challenging. If you'd like to talk about what's stressing you, I'm here for you."
+  - text: "The workload and constant deadlines can be stressful. Let's discuss strategies to cope with it together."
+  - text: "Work-related stress is common. What specific aspects of work are causing you stress?"
+  - text: "Handling a stressful situation can be tough. If you want to share more, I'm here to help."
+  - text: "Stress about upcoming exams is understandable. Let's explore ways to manage that stress together."
+  - text: "Juggling multiple responsibilities can indeed be stressful. How can I assist you in balancing things?"
+  - text: "Uncertainty about the future can be stressful. Let's talk about ways to navigate through this period."
+  - text: "Feeling a sense of stress and anxiety is challenging. If you'd like to discuss it, I'm here for support."
+
+  utter_emotion_anxiety:
+  - text: "I'm sorry to hear that you're feeling overwhelmed with anxiety. It's okay to express how you feel. How can I support you?"
+  - text: "Feeling anxious is tough. I'm here to provide support. What's been on your mind?"
+  - text: "I understand that anxiety can be challenging. If you want to share more about what you're going through, I'm here to listen."
+  - text: "Struggling with mental health is tough. I'm here to support you through the challenges you're facing."
+  - text: "I hear you. If you want to talk about what's causing you stress and anxiety, I'm here to help."
+  - text: "Dealing with overwhelming anxiety is challenging. Let's explore ways to manage it together."
+  - text: "Social situations triggering anxiety is common. If you'd like to discuss strategies to cope, I'm here for you."
+  - text: "Persistent anxiety can impact well-being. How can I assist you in navigating through this?"
+  - text: "Thoughts about the future causing anxiety attacks can be distressing. Let's talk about coping strategies."
+  - text: "Feeling a constant sense of unease is tough. If you'd like support, I'm here to offer guidance."
+  - text: "Coping with daily tasks can be challenging due to anxiety. I'm here to help you find ways to manage."
+  - text: "I'm sorry to hear that your mental health struggles are causing a lot of anxiety. Let's discuss ways to cope and improve."
+  - text: "Feeling anxious about seeking help is understandable. I'm here to support you on your mental health journey."
+  - text: "Experiencing anxiety when discussing mental health is common. If you want to talk, I'm here to listen without judgment."
+  - text: "The uncertainty of your mental health journey causing anxiety is understandable. How can I assist you in navigating through this uncertainty?"
+  - text: "I am a bot, powered by Rasa."
+
+  utter_emotion_anger:
+  - text: "I hear your frustration with the situation. It's okay to feel angry. How can I assist you in managing this anger?"
+  - text: "Feeling angry is understandable. Let's talk about it. What's on your mind?"
+  - text: "I can sense your anger. If you want to share more about what's infuriating you, I'm here to listen."
+  - text: "Constant delays can be frustrating. How can I help you navigate through this challenging situation?"
+  - text: "I understand that this situation is making your blood boil. Let's discuss ways to cope and find solutions."
+  - text: "Feeling fed up with incompetence is valid. If you'd like to talk about it, I'm here to provide support."
+  - text: "Getting really mad about an issue is tough. I'm here to help you explore ways to manage your anger."
+  - text: "I can see that this is irritating for you. If you want to discuss it further, I'm here to assist."
+  - text: "Feeling angry about an unacceptable situation is natural. How can I support you in addressing this issue?"
+  - text: "Seething with anger is a powerful emotion. Let's talk about what's going on and find ways to cope."
+  - text: "Feeling frustrated with yourself is challenging. I'm here to offer support and guidance."
+  - text: "Dealing with mental health challenges can indeed be infuriating. I'm here to help you navigate through it."
+  - text: "The stigma around mental health issues is frustrating. If you'd like to share your thoughts, I'm here to listen."
+  - text: "Feeling mad when others don't understand mental health complexities is valid. Let's explore ways to communicate and educate."
+  - text: "The lack of support for mental health services can be anger-inducing. How can I assist you in coping with these frustrations?"
+  - text: "Struggling with self-acceptance and feeling angry is tough. I'm here to provide support and understanding."
+  - text: "The impact of mental health on relationships can indeed be infuriating. Let's talk about strategies to navigate through these challenges."
+  - text: "Experiencing setbacks in mental health recovery is frustrating. I'm here to help you focus on the path forward."
+  - text: "Society's misconceptions about mental health can be upsetting and anger-inducing. How can I support you in addressing these misconceptions?"
+  - text: "Struggling with inner anger due to mental health challenges is a valid feeling. I'm here to provide support and guidance."
+  
+
+  utter_emotion_surprise:
+  - text: "I can see that this came as a surprise. How are you feeling about it?"
+  - text: "Unexpected news can be surprising. What are your thoughts or reactions to it?"
+  - text: "A complete surprise can be quite impactful. How are you processing this information?"
+  - text: "Being taken aback by a sudden turn of events is understandable. What's going through your mind right now?"
+  - text: "It's natural to feel caught off guard. If you want to talk about it, I'm here to listen."
+  - text: "Pleasant surprises can brighten the day. How has this positive surprise affected your mood?"
+  - text: "Never seeing something coming can be quite a shock. How are you handling the surprise?"
+  - text: "What a shock indeed! If you'd like to share more about your reaction, I'm here to chat."
+  - text: "Sudden changes in plans can be surprising. How has it impacted your day?"
+  - text: "News that leaves you in disbelief can be overwhelming. If you want to talk, I'm here to provide support."
+
+  utter_emotion_love:
+  - text: "Feeling a deep love and connection with family is beautiful. Family support is invaluable. How does it make you feel?"
+  - text: "Overwhelming love for your partner is wonderful. What aspects of your partner bring you joy and love?"
+  - text: "Experiencing love through acts of kindness is heartwarming. What kind acts have impacted you recently?"
+  - text: "The support of friends is special. How has their support contributed to your overall sense of love?"
+  - text: "Finding joy and love in spending time with a pet is heartening. Pets have a unique way of bringing joy. What do you love most about your pet?"
+  - text: "Expressing gratitude is a powerful way to feel a profound sense of love. What are you grateful for in this moment?"
+  - text: "The beauty of nature has a way of bringing out feelings of love. What aspects of nature resonate with you?"
+  - text: "Helping others and feeling love in return is fulfilling. How do you experience love through acts of kindness?"
+  - text: "Gratitude for love and understanding in relationships is important. How do these qualities positively impact your life?"
+  - text: "Engaging in creative activities as a source of self-love is fantastic. What creative pursuits bring you the most joy and love?"
+
+
+  utter_emotion_fear:
+  - text: "I'm sorry to hear that you're experiencing overwhelming fear and panic in social situations. It's okay to feel this way. How can I support you?"
+  - text: "Constant worry about the future can be fear-inducing. If you want to talk about it, I'm here to provide support."
+  - text: "Intense fear of leaving the house is challenging. Let's explore ways to manage this fear and improve your daily life."
+  - text: "Thoughts of past trauma triggering fear and anxiety is tough. If you feel comfortable, I'm here to listen and offer support."
+  - text: "Fear of talking about mental health is common. If you'd like to share, I'm here to listen without judgment."
+  - text: "The fear of being judged can be a barrier to seeking help. I'm here to provide support and understanding. You're not alone."
+  - text: "Specific situations triggering strong fear, like crowded places, can be overwhelming. How can I assist you in managing these situations?"
+  - text: "Experiencing sudden, intense fear without an apparent cause can be distressing. Let's explore ways to cope with these moments."
+  - text: "Fear of failure is a common challenge. I'm here to help you navigate through this fear and support your pursuit of goals."
+  - text: "Constantly being on edge and triggered by unexpected sounds or movements is challenging. How can I assist you in managing this heightened state of fear?"
+ 
+
+  utter_coping_strategies:
+  - text: "Certainly! Coping strategies vary, but here are some general tips:\n1. **Deep Breathing:** Practice deep, slow breaths to calm your nervous system.\n2. **Mindfulness Meditation:** Focus on the present moment to reduce anxiety.\n3. **Physical Activity:** Regular exercise can help alleviate stress and improve mood.\n4. **Journaling:** Write down your thoughts and feelings to gain clarity.\n5. **Social Support:** Connect with friends, family, or support groups for emotional support.\n6. **Time Management:** Break tasks into smaller, manageable steps to reduce overwhelm.\n7. **Positive Affirmations:** Replace negative thoughts with positive ones.\n8. **Self-Care:** Prioritize self-care activities that bring you joy and relaxation.\nRemember, finding what works for you is key. Feel free to explore these strategies and adjust them to suit your needs."
+  - text: "Certainly! Coping strategies are personal, but here are some suggestions:\n1. **Deep Breathing:** Practice diaphragmatic breathing to reduce stress.\n2. **Progressive Muscle Relaxation:** Relax and tense different muscle groups to release tension.\n3. **Cognitive Behavioral Techniques:** Challenge and reframe negative thoughts.\n4. **Mindfulness Practices:** Engage in mindfulness meditation or yoga.\n5. **Expressive Writing:** Write about your emotions to process and understand them.\n6. **Art and Creativity:** Explore artistic activities as a form of self-expression.\n7. **Establishing Routines:** Create a structured daily routine for stability.\n8. **Connecting with Nature:** Spend time outdoors to boost your mood.\nRemember, it's okay to experiment with different strategies and find what works best for you."
+  - text: "Absolutely! Coping strategies play a crucial role in mental well-being. Consider these tips:\n1. **Breathing Exercises:** Incorporate deep breathing to manage stress levels.\n2. **Mindful Meditation:** Practice mindfulness to stay present and calm.\n3. **Positive Affirmations:** Affirm your strengths and positive qualities daily.\n4. **Seeking Professional Help:** Reach out to therapists or counselors for support.\n5. **Building a Support System:** Cultivate relationships with supportive friends and family.\n6. **Engaging in Hobbies:** Pursue activities that bring joy and fulfillment.\n7. **Setting Realistic Goals:** Break down tasks into achievable goals.\n8. **Time Management:** Prioritize tasks to reduce feelings of being overwhelmed.\nRemember, everyone's journey is unique. Find what resonates with you and tailor your coping strategies accordingly."
+  - text: "Absolutely! Coping strategies are essential for mental well-being. Here are some suggestions:\n1. **Breathing Exercises:** Practice deep, intentional breathing to reduce stress.\n2. **Mindfulness Meditation:** Cultivate awareness of the present moment to manage overwhelming emotions.\n3. **Healthy Distractions:** Engage in activities you enjoy to shift your focus.\n4. **Self-Compassion:** Be kind to yourself and acknowledge your efforts.\n5. **Professional Support:** Consider therapy or counseling for personalized coping strategies.\n6. **Physical Exercise:** Regular activity can boost mood and alleviate depression.\n7. **Creative Outlets:** Express yourself through art, music, or writing.\n8. **Connect with Others:** Share your feelings with trusted friends or family.\nRemember, finding the right coping strategies may take time. Explore different approaches and discover what works best for you."
+  - text: "Of course! Coping strategies are essential for managing overwhelming emotions. Here are some techniques:\n1. **Mindfulness:** Practice being present in the moment to reduce anxiety.\n2. **Grounding Techniques:** Focus on your senses to anchor yourself during stress.\n3. **Emotional Regulation:** Identify and label your emotions to better understand and manage them.\n4. **Self-Care Rituals:** Develop routines that prioritize your well-being.\n5. **Positive Visualization:** Picture a calming and positive scenario to shift your focus.\n6. **Journaling:** Write down your thoughts and emotions to process them.\n7. **Progressive Muscle Relaxation:** Relax different muscle groups to release tension.\n8. **Counseling or Therapy:** Seek professional support for personalized coping strategies.\nRemember, finding effective coping strategies is a journey, and it's okay to experiment to discover what works best for you."
+  
+
+  utter_resources:
+  - text: "Absolutely! Here are some reliable mental health resources:\n1. **National Institute of Mental Health (NIMH):** [NIMH Website](https://www.nimh.nih.gov/)\n2. **Mental Health America:** [Mental Health America Website](https://www.mhanational.org/)\n3. **Anxiety and Depression Association of America (ADAA):** [ADAA Website](https://adaa.org/)\n4. **Psychology Today:** [Psychology Today - Find a Therapist](https://www.psychologytoday.com/)\n5. **Mind:** [Mind - Mental Health Charity](https://www.mind.org.uk/)\nRemember to consult with professionals for personalized advice and support."
+  - text: "Certainly! Here are some reputable mental health resources:\n1. **National Alliance on Mental Illness (NAMI):** [NAMI Website](https://www.nami.org/)\n2. **American Psychological Association (APA):** [APA - Mental Health](https://www.apa.org/)\n3. **HelpGuide:** [HelpGuide - Mental Health Resources](https://www.helpguide.org/)\n4. **Crisis Text Line:** Text HOME to 741741 for free, 24/7 crisis support.\n5. **SAMHSA National Helpline:** Call 1-800-662-HELP (4357) for substance abuse and mental health assistance."
+  - text: "Absolutely! Here are some mental health resources to explore:\n1. **Beyond Blue:** [Beyond Blue - Anxiety and Depression](https://www.beyondblue.org.au/)\n2. **The Recovery Village:** [The Recovery Village - Mental Health Resources](https://www.therecoveryvillage.com/resources/)\n3. **Headspace:** [Headspace - Mindfulness and Meditation](https://www.headspace.com/)\n4. **TherapyRoute.com:** [TherapyRoute.com - Find a Therapist](https://www.therapyroute.com/)\n5. **National Suicide Prevention Lifeline:** Call 1-800-273-TALK (1-800-273-8255) for immediate help."
+  - text: "Certainly! Here are some trustworthy mental health resources:\n1. **Mayo Clinic - Mental Health:** [Mayo Clinic - Mental Health](https://www.mayoclinic.org/diseases-conditions/mental-illness)\n2. **National Suicide Prevention Lifeline:** Call 1-800-273-TALK (1-800-273-8255) for immediate assistance.\n3. **WebMD - Mental Health:** [WebMD - Mental Health](https://www.webmd.com/mental-health/)\n4. **American Foundation for Suicide Prevention (AFSP):** [AFSP Website](https://afsp.org/)\n5. **Talkspace:** [Talkspace - Online Therapy](https://www.talkspace.com/)"
+  - text: "Absolutely! Here are some mental health resources for stress management:\n1. **Stress.org:** [Stress.org - Resources](https://www.stress.org/resources)\n2. **MindTools:** [MindTools - Stress Management](https://www.mindtools.com/pages/main/newMN_TCS.htm)\n3. **HelpGuide - Stress Management:** [HelpGuide - Stress Management](https://www.helpguide.org/home-pages/stress.htm)\n4. **Calm:** [Calm - Meditation and Sleep](https://www.calm.com/)\n5. **Headspace:** [Headspace - Stress](https://www.headspace.com/stress)"
+  - text: "Certainly! Here are some mental health resources for dealing with grief and loss:\n1. **Grief.com:** [Grief.com - Resources](https://grief.com/resources/)\n2. **What's Your Grief:** [What's Your Grief - Resources](https://whatsyourgrief.com/grief-resources/)\n3. **National Hospice and Palliative Care Organization (NHPCO):** [NHPCO - Grief Resources](https://www.nhpco.org/resources/grief-and-loss/)\n4. **The Dougy Center:** [The Dougy Center - Grief Support](https://www.dougy.org/)\n5. **GriefShare:** [GriefShare - Find a Group](https://www.griefshare.org)"
+  
+
+  utter_relaxation:
+  - text: "Absolutely! Here are some effective relaxation techniques:\n1. **Deep Breathing:** Inhale slowly, hold, exhale; repeat.\n2. **Progressive Muscle Relaxation (PMR):** Tense and relax muscle groups.\n3. **Guided Imagery:** Imagine a calming scene in detail.\n4. **Mindfulness Meditation:** Focus on the present moment without judgment.\n5. **Aromatherapy:** Use scents like lavender for relaxation.\n6. **Warm Baths:** Soak in a warm bath to relax muscles.\n7. **Yoga:** Gentle poses and stretching promote relaxation.\n8. **Nature Walks:** Spend time outdoors for a calming effect.\nRemember, finding what works best for you is key. Explore and enjoy the process of relaxation!"
+  - text: "Certainly! Here are some relaxation exercises for reducing stress:\n1. **Box Breathing:** Inhale for 4 counts, hold for 4, exhale for 4, pause for 4; repeat.\n2. **Body Scan Meditation:** Focus on each part of your body, releasing tension.\n3. **Visualization:** Picture a peaceful scene, engaging your senses.\n4. **Journaling:** Write down thoughts to clear your mind.\n5. **Stretching Exercises:** Gently stretch to release physical tension.\n6. **Progressive Muscle Relaxation (PMR):** Tense and release muscle groups.\n7. **Mindful Walking:** Pay attention to each step and your surroundings.\n8. **Breath Counting:** Focus on your breath, counting each inhale and exhale.\nFeel free to explore these techniques and adapt them to your preferences!"
+  - text: "Certainly! Here are some tips for incorporating relaxation into a daily routine:\n1. **Morning Mindfulness:** Start the day with a few minutes of mindful breathing.\n2. **Lunchtime Break:** Take a short walk or practice deep breathing during lunch.\n3. **Afternoon Stretch:** Engage in gentle stretching exercises.\n4. **Evening Relaxation:** Wind down with calming activities before bedtime.\n5. **Digital Detox:** Limit screen time to promote relaxation.\n6. **Nature Breaks:** Spend time outdoors for a refreshing break.\n7. **Mindful Eating:** Eat meals slowly, savoring each bite.\n8. **Reflection Time:** Dedicate a few minutes to reflect on your day.\nRemember, consistency is key to establishing a relaxing routine!"
+  - text: "Certainly! Here are techniques for promoting relaxation before bedtime:\n1. **Progressive Muscle Relaxation (PMR):** Release tension in each muscle group.\n2. **Breathing Exercises:** Slow, deep breaths to calm the nervous system.\n3. **Guided Sleep Meditation:** Listen to a calming meditation or visualization.\n4. **Warm Tea:** Enjoy a caffeine-free herbal tea for relaxation.\n5. **Reading:** Choose a calming book to unwind your mind.\n6. **Soft Lighting:** Use dim lights to signal your body to prepare for sleep.\n7. **Aromatherapy:** Use lavender or chamomile scents for relaxation.\n8. **Screen-Free Zone:** Avoid screens at least an hour before bedtime for better sleep quality."
+  - text: "Certainly! Here are quick relaxation methods for high-stress situations:\n1. **Deep Breathing:** Take slow, deep breaths to calm the nervous system.\n2. **Mindful Grounding:** Focus on your senses—touch, sight, sound—to stay present.\n3. **Countdown Technique:** Count backward from 10 to 1 to ease tension.\n4. **Quick Body Scan:** Mentally check and release tension in your body.\n5. **Mini-Meditation:** Close your eyes and focus on your breath for a few minutes.\n6. **Stretching:** Perform quick stretches to release physical tension.\n7. **Positive Affirmations:** Repeat calming affirmations to shift your mindset.\n8. **Humming or Singing:** Engage in a brief humming or singing session to relax your body."
+  - text: "Certainly! Here are some guided relaxation exercises to try:\n1. **Guided Imagery:** Follow a narrator describing a peaceful scene.\n2. **Body Scan Meditation:** Focus on each part of your body, releasing tension.\n3. **Loving-Kindness Meditation:** Cultivate feelings of love and compassion.\n4. **Progressive Muscle Relaxation (PMR):** Tense and release muscle groups.\n5. **Ocean Waves Visualization:** Imagine the calming sound of ocean waves.\n6. **Mindful Breathing:** Follow a guide for rhythmic and calming breaths.\n7. **Mountain Meditation:** Visualize yourself as a strong and grounded mountain.\n8. **Colorful Journey:** Picture a vibrant and serene landscape in your mind."
+  - text: "Certainly! Here are breathing exercises for relaxation:\n1. **4-7-8 Breathing:** Inhale for 4 counts, hold for 7, exhale for 8; repeat.\n2. **Diaphragmatic Breathing:** Focus on deep breaths from your diaphragm.\n3. **Alternate Nostril Breathing:** Inhale through one nostril, exhale through the other.\n4. **Box Breathing:** Inhale, hold, exhale, pause; repeat for equal counts.\n5. **Breath Counting:** Inhale and exhale, counting each breath cycle.\n6. **Resonant Breathing:** Match your breath to a resonant frequency, usually 4-6 breaths per minute.\n7. **Belly Breathing:** Expand your belly with each inhale and contract it with each exhale.\n8. **Triangle Breathing:** Inhale, hold, and exhale for equal counts, forming a triangle pattern.\nFeel free to try these exercises and discover which one works best for you!"
+  - text: "Certainly! Here's information on progressive muscle relaxation:\nProgressive Muscle Relaxation (PMR) is a relaxation technique that involves tensing and then gradually releasing different muscle groups. Here's a simple guide to practicing PMR:\n1. **Find a Quiet Space:** Choose a quiet and comfortable"
+
+
+  utter_emergency:
+  - text: "I'm truly sorry to hear that you're going through this difficult time. Your safety is the top priority. If you're comfortable, please consider reaching out to a mental health professional who can provide support tailored to your needs. Alternatively, talking to a trusted friend, family member, or someone you feel close to can make a significant difference. If you're in immediate danger or need urgent assistance, please call emergency services in your country. Remember, you don't have to face this alone, and there are people who care about you and want to help."
+  - text: "I'm really sorry to hear that you're in crisis. It's essential to prioritize your safety. Connecting with a mental health professional can provide valuable support and guidance. If you're not already in touch with a mental health professional, consider reaching out to one. In the meantime, talking to someone you trust—a friend, family member, or anyone close to you—can also make a difference. If you're in immediate danger, please call emergency services in your country. Remember, there are people who care about you, and seeking help is a sign of strength."
+  - text: "I want you to know that I'm here for you, and I'm really sorry to hear that you're feeling this way. It's important to take immediate steps to ensure your safety. If you have a mental health professional you've worked with before, consider reaching out to them. If not, try to connect with a mental health professional as soon as possible. In the meantime, talking to someone you trust can provide valuable support. If your situation is urgent or you're in immediate danger, please call emergency services in your country. You're not alone, and there are people who want to assist you through this challenging time."
+  - text: "I'm truly sorry that you're experiencing such distress. Your well-being is of the utmost importance. If you're comfortable, reaching out to a mental health professional can offer specialized support. Additionally, talking to someone you trust—a friend, family member, or anyone close to you—can provide immediate comfort. In case of immediate danger or if you're unable to connect with a mental health professional, please call emergency services in your country. Remember, seeking help is a courageous step, and there are caring individuals ready to support you."
+  - text: "I'm genuinely sorry that you're going through this, and I want to encourage you to prioritize your safety. Connecting with a mental health professional can provide the tailored support you need. If you're not currently in touch with a mental health professional, consider reaching out to one. It's also crucial to talk to someone you trust—a friend, family member, or someone close to you. If your situation is urgent or you're in immediate danger, please call emergency services in your country. Remember, there are people who care about you, and seeking help is a courageous step toward healing."
+  - text: "I am a bot, powered by Rasa."
+
+  utter_funny:
+  - text: "Sure, here's a joke to brighten your day: Why don't scientists trust atoms? Because they make up everything!"
+  - text: "In need of a laugh? Here you go: Why did the computer go to therapy? It had too many bytes of emotional baggage!"
+  - text: "Here's a lighthearted joke for you: Why don't skeletons fight each other? They don't have the guts!"
+  - text: "Ready for a chuckle? How do you organize a space party? You planet!"
+  - text: "Need a break from seriousness? Here's a funny fact: Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible!"
+  - text: "Let's lighten the mood with a funny quote: 'The early bird might get the worm, but the second mouse gets the cheese.'"
+  - text: "Feeling down? Here's a funny story to lift your spirits: Once upon a time, a snail bought a fast sports car. When people asked why, it said, 'I want to make sure when people see me, they say, 'Look at that S-car-go!'"
+  - text: "In need of a laugh? How about this: I told my wife she was drawing her eyebrows too high. She looked surprised."
+  - text: "Ready for a humorous fact? Sea otters hold hands when they sleep to keep from drifting apart. It's called 'rafting'—how adorable is that?"
+  
+
+  utter_thanks:
+  - text: "You're welcome! If you have more questions or need further assistance, feel free to ask."
+  - text: "Glad I could help! If there's anything else you need, just let me know."
+  - text: "No problem at all! If you ever need support again, don't hesitate to reach out."
+  - text: "You're very welcome! If there's anything else on your mind, I'm here for you."
+  - text: "It was my pleasure to assist you! If you have more inquiries, feel free to ask anytime."
+  - text: "I'm happy to help! If there's anything specific you'd like to discuss, feel free to share."
+  - text: "Thank you for your kind words! If you ever have more questions, I'm here to provide assistance."
+  - text: "I appreciate your gratitude! If there's anything else I can do for you, let me know."
+  - text: "You're welcome! If you ever need information or support, don't hesitate to reach out."
+  - text: "Thanks for expressing your appreciation! If there's anything more you'd like to talk about, feel free to share."
+
+  utter_goal_setting:
+  - text: "Setting mental health goals is a positive step. Start by identifying specific, realistic objectives. Break them down into smaller tasks to make progress manageable. If you have particular goals in mind, feel free to share, and I can offer guidance!"
+  - text: "Absolutely! Establishing mental health goals is a commendable endeavor. Begin by outlining clear, achievable objectives. Consider factors like self-care, emotional well-being, and personal growth. If you have specific goals you'd like assistance with, share them, and we can work on a plan together!"
+  - text: "Great initiative! Setting mental health goals is crucial. Start by defining clear and realistic objectives. Break them down into smaller, actionable steps. If you need assistance in formulating or refining your goals, feel free to share, and we can discuss a plan tailored to your needs."
+  - text: "Absolutely, I can help you with that! Setting mental health goals involves creating specific, measurable, achievable, relevant, and time-bound objectives. Let's work together to define your goals and outline a plan to achieve them. What are some areas you'd like to focus on?"
+  - text: "Setting mental health goals is a fantastic decision. Begin by identifying areas you'd like to improve or maintain. Create specific, achievable objectives and consider breaking them into smaller steps. If you have specific goals in mind, share them, and we can explore strategies to help you succeed!"
+
+  utter_progress_tracking:
+  - text: "Tracking your mental health progress is important. Consider keeping a journal to record your thoughts and emotions. Additionally, monitor changes in your daily habits, sleep, and overall mood. Regular self-reflection can provide valuable insights into your journey. If you have specific areas you'd like guidance on, feel free to share!"
+  - text: "Great initiative! To track your mental health progress, consider keeping a journal to document your feelings and experiences. Pay attention to positive changes in your daily routines, emotional well-being, and overall mindset. If you're looking for specific tools or methods, let me know, and we can explore options together!"
+  - text: "Tracking your mental health progress is a wise choice. Start by creating a system that works for you, such as a journal or digital app. Monitor changes in your mood, energy levels, and overall well-being. If you need assistance in finding the right tools, feel free to ask for recommendations!"
+  - text: "Monitoring your mental health progress is a positive step. Consider using tools like mood trackers, journaling, or goal-setting techniques. Reflect on your achievements and any challenges you've overcome. If you're looking for specific methods or resources, let me know, and I can provide guidance!"
+  - text: "It's great that you want to track your mental health progress. Consider keeping a journal to document your feelings and experiences. Look for patterns in your emotions, habits, and overall well-being. If you're seeking tools or methods for tracking progress, feel free to ask for suggestions!"
+ 
+
+  utter_stress_management:
+  - text: "Stress management is crucial. Consider practicing mindfulness through activities like meditation or deep breathing. Establish a routine that includes breaks, physical activity, and self-care. If you're dealing with work-related stress, setting boundaries and prioritizing tasks can be beneficial. Let me know if you'd like more personalized suggestions!"
+  - text: "Absolutely! Stress management is key for overall well-being. Incorporate mindfulness practices such as meditation or yoga into your routine. Break down tasks, set realistic goals, and prioritize self-care. If you're dealing with work-related stress, establishing clear boundaries and seeking support can make a significant difference. Feel free to ask for more tailored advice!"
+  - text: "Managing stress is important for your mental health. Consider incorporating activities like meditation, deep breathing, or exercise into your routine. Break down tasks into smaller, manageable steps, and prioritize self-care. If you're dealing with stress at work, setting boundaries and taking breaks are essential. Let me know if you have specific areas you'd like guidance on!"
+  - text: "Stress management is vital for a healthy lifestyle. Explore stress relief techniques such as mindfulness, progressive muscle relaxation, or engaging in hobbies. If you're dealing with work-related stress, time management and communication skills are key. Let me know if you'd like more information or personalized strategies!"
+  - text: "Certainly! Managing stress is important for mental well-being. Consider incorporating stress relief techniques like mindfulness, relaxation exercises, or physical activity into your daily routine. If you're dealing with work-related stress, time management and setting realistic goals can be helpful. Let me know if you have specific areas you'd like assistance with!"
+  
+  utter_self_reflection:
+  - text: "Self-reflection is a powerful tool for mental well-being. Consider setting aside time for introspection, journaling your thoughts, and identifying patterns in your emotions. Reflect on your achievements and areas for growth. If you're looking for specific self-reflection exercises or guidance, feel free to ask!"
+  - text: "Practicing self-reflection is beneficial for emotional well-being. Dedicate moments for introspection, explore your thoughts through journaling, and recognize patterns in your emotions. Reflect on your journey, celebrating achievements, and identifying areas for improvement. If you'd like assistance with specific self-reflection exercises, let me know!"
+  - text: "Self-reflection plays a significant role in mental wellness. Set aside time for introspection, consider journaling to explore your thoughts, and recognize patterns in your emotions. Reflect on your experiences, acknowledging achievements, and identifying areas for personal growth. If you're looking for specific self-reflection exercises or further guidance, feel free to ask!"
+  - text: "Absolutely! Self-reflection is a valuable practice for mental health. Create moments for introspection, perhaps through journaling or guided meditation. Reflect on your emotions, experiences, and personal growth. If you're interested in specific self-reflection exercises or tips on incorporating this into your routine, let me know!"
+  - text: "Self-reflection is key for emotional well-being. Dedicate time for introspection, consider journaling to explore your thoughts and feelings, and reflect on your journey. Celebrate your successes and identify areas for improvement. If you're looking for specific self-reflection exercises or guidance on incorporating this practice, feel free to ask!"
+
+
+  utter_motivational_boost:
+  - text: "I understand it can be tough. Remember, progress is progress, no matter how small. You're stronger than you think. Take one step at a time, and celebrate your achievements along the way. If you need specific motivation or encouragement, let me know!"
+  - text: "Feeling demotivated is completely normal, but don't forget how far you've come. Every step counts, and your resilience is commendable. Focus on small victories, and remember that setbacks are part of the journey. If you need a specific motivational boost, feel free to share your thoughts."
+  - text: "I hear you. It's okay to feel demotivated at times. Remember, your journey is unique, and progress is personal. Reflect on your achievements, no matter how small. If there's a particular area where you need motivation, feel free to let me know, and we can work on it together!"
+  - text: "Facing challenges is a part of the journey, and you're not alone in feeling demotivated. Acknowledge your strength and resilience. Break down your goals into manageable steps, and focus on the positive aspects of your journey. If you need specific motivation, share your thoughts, and let's find inspiration together!"
+  - text: "I understand that staying motivated can be tough. Remember, your journey is filled with ups and downs, and each step forward is a victory. Celebrate your resilience and progress. If you're looking for motivational quotes or stories, or if there's a specific area you need encouragement in, feel free to share."
+  
+
+  utter_mindfulness_practices:
+  - text: "Mindfulness is a powerful practice for mental well-being. Start by focusing on your breath; notice each inhale and exhale. Consider guided meditation sessions or mindfulness apps to help you get started. If you're pressed for time, even short moments of mindfulness throughout the day can make a difference. If you have specific questions or need guidance, feel free to ask!"
+  - text: "Mindfulness can greatly contribute to mental well-being. Begin by focusing on your breath and bringing awareness to the present moment. Guided meditation or mindfulness apps can be helpful for beginners. Even brief moments of mindfulness in a busy schedule can make a positive impact. If you need assistance with specific practices, let me know!"
+  - text: "Practicing mindfulness is a wonderful way to enhance mental well-being. Start with simple exercises like mindful breathing or body scan meditations. Consider using mindfulness apps for guidance. Even a few minutes a day can make a difference. If you're looking for specific practices or have questions, feel free to ask!"
+  - text: "Mindfulness practices are beneficial for mental health. Begin by focusing on your breath and being present in the moment. Explore guided meditation sessions or mindfulness apps. You can incorporate mindfulness into a busy schedule by taking short breaks for mindful breathing or quick grounding exercises. If you have specific questions or need guidance, let me know!"
+  - text: "Mindfulness is a powerful tool for mental well-being. Start by bringing awareness to your breath and practicing present-moment awareness. Guided meditations and mindfulness exercises can be helpful, especially for beginners. Even in a busy schedule, finding small moments for mindfulness can have positive effects. If you're looking for specific practices or have questions, feel free to ask!"
+
+  utter_family_support:
+  - text: "Supporting a family member with mental health challenges is important. Encourage open communication and actively listen to their feelings. Offer your presence and understanding, and educate yourself on their specific condition. If you need more guidance or have specific concerns, feel free to ask!"
+  - text: "Supporting a loved one with mental health challenges is commendable. Create a supportive environment by being empathetic, patient, and non-judgmental. Encourage open conversations about their mental health and explore resources together. If you have specific questions or need advice, feel free to share!"
+  - text: "It's great that you want to support a family member with mental health challenges. Foster a supportive environment by being understanding and patient. Encourage open communication about their feelings and seek resources together. If you have specific situations or questions, feel free to ask for guidance!"
+  - text: "Supporting a family member with mental health challenges requires patience and understanding. Create a safe space for open communication, and offer your presence without judgment. Explore resources together and stay informed about their condition. If you need more advice or have specific concerns, feel free to share!"
+  - text: "Supporting a loved one with mental health challenges is crucial. Foster a supportive atmosphere by promoting open communication and actively listening. Educate yourself about their specific condition and explore resources together. If you have specific questions or need further guidance, feel free to ask!"
+
+
+actions:
+ - utter_greet
+ - utter_goodbye
+ - utter_affirm
+ - utter_deny
+ - utter_happy
+ - utter_sad
+ - utter_bot_challenge
+ - utter_stress
+ - utter_emotion_anxiety
+ - utter_emotion_anger
+ - utter_emotion_surprise
+ - utter_emotion_love
+ - utter_funny
+ - utter_thanks
+ - utter_goal_setting
+ - utter_progress_tracking
+ - utter_stress_management
+ - utter_self_reflection
+ - utter_motivational_boost
+ - utter_mindfulness_practices
+ - utter_family_support
+ - utter_relaxation
+ - utter_coping_strategies
+ - utter_resources
+ - utter_emergency
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

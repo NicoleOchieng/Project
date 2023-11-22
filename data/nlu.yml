@@ -1,0 +1,377 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - No, I don't want to talk about that.
+    - I'd rather not discuss that right now.
+    - I'm not comfortable sharing that information.
+    - No, I don't agree with that.
+    - I'd rather keep that to myself.
+    - I'm not interested in discussing that topic.
+    - No, that's not something I want to talk about.
+    - I'd rather avoid that conversation.
+    - I don't think I can share that with you.
+    - No, I'm not ready to open up about that.
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - No, I don't want to talk about that.
+    - I'd rather not discuss that right now.
+    - I'm not comfortable sharing that information.
+    - No, I don't agree with that.
+    - I'd rather keep that to myself.
+    - I'm not interested in discussing that topic.
+    - No, that's not something I want to talk about.
+    - I'd rather avoid that conversation.
+    - I don't think I can share that with you.
+    - No, I'm not ready to open up about that
+
+- intent: emotion_happy
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - I'm feeling really positive about my mental health progress.
+    - Engaging in self-care activities makes me genuinely happy.
+    - Reflecting on my achievements in my mental health journey brings joy.
+    - I had a breakthrough in therapy, and it's making me feel incredibly happy.
+    - Connecting with supportive friends boosts my mental health and happiness.
+    - I'm finding joy in the small victories on my mental health path.
+    - Learning new coping mechanisms is bringing happiness into my life.
+    - Practicing mindfulness has positively impacted my mental health and mood.
+    - Celebrating moments of self-love contributes to my overall happiness.
+    - I'm genuinely happy about the positive changes I'm making for my mental health.
+
+- intent: emotion_sad
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - I'm feeling really down about my mental health.
+    - The challenges of my mental health journey are making me sad.
+    - Thoughts of my past struggles bring a sense of deep sadness.
+    - Coping with daily life feels overwhelming and leaves me feeling sad.
+    - I'm finding it hard to shake off this persistent sadness.
+    - My mental health issues are contributing to a constant feeling of sadness.
+    - The stigma around mental health makes me feel sad and isolated.
+    - I feel a profound sense of sadness when I reflect on my mental health journey.
+    - The impact of mental health on my relationships is causing me a lot of sadness.
+    - I'm struggling with self-compassion, and it's making me feel sad.
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: stress
+  examples: |
+    - I'm stressed out
+    - I'm under a lot of pressure
+    - Everything is so stressful
+    - I'm feeling really stressed out lately.
+    - The workload is overwhelming, and it's stressing me out.
+    - I can't handle this pressure; it's causing a lot of stress.
+    - The constant deadlines are stressing me.
+    - I'm under a lot of stress at work.
+    - Dealing with this situation is making me feel stressed.
+    - I'm stressed about upcoming exams.
+    - Juggling multiple responsibilities is causing stress.
+    - The uncertainty of the future is stressing me.
+    - I feel a sense of stress and anxiety about this.
+
+- intent: emotion_anxiety
+  examples: |
+    - I feel overwhelmed
+    - I am feeling anxious
+    - I am feeling depressed
+    - I am struggling with my mental health
+    - I am feeling stressed
+    - Lately, I've been overwhelmed with anxiety about my mental health.
+    - Social situations trigger intense anxiety for me.
+    - I'm dealing with persistent anxiety, and it's affecting my well-being.
+    - Thoughts about the future often lead to anxiety attacks.
+    - I feel a constant sense of unease and anxiety.
+    - Coping with daily tasks is challenging due to my anxiety.
+    - My mental health struggles are causing a lot of anxiety.
+    - Anxiety is a major barrier to seeking help for my mental health issues.
+    - I experience anxiety when discussing my mental health with others.
+    - The uncertainty of my mental health journey is causing anxiety.
+
+- intent: emotion_anger
+  examples: |
+    - I'm so frustrated with this situation!
+    - That really makes me angry.
+    - I can't believe this, it's infuriating.
+    - The constant delays are getting on my nerves.
+    - This is making my blood boil.
+    - I'm fed up with the incompetence.
+    - I'm getting really mad about this issue.
+    - It's so irritating!
+    - This is unacceptable, and it makes me angry.
+    - I'm seething with anger right now.
+    - intent: emotion_anger
+    - I'm frustrated with myself for not managing my mental health better.
+    - Dealing with mental health challenges makes me angry.
+    - The stigma around mental health issues infuriates me.
+    - I get really mad when people don't understand the complexities of mental health.
+    - The lack of support for mental health services makes me angry.
+    - I'm struggling with self-acceptance, and it's making me feel angry.
+    - The impact of mental health on my relationships makes me furious.
+    - I'm angry about the setbacks in my mental health recovery.
+    - Society's misconceptions about mental health make me upset and angry.
+    - My own struggles with mental health are causing a lot of inner anger.
+
+
+
+- intent: emotion_surprise
+  examples: |
+    - I didn't expect that!
+    - Wow, that's surprising news.
+    - This came as a complete surprise to me.
+    - I'm taken aback by the sudden turn of events.
+    - That revelation caught me off guard.
+    - I'm pleasantly surprised by the outcome.
+    - I never saw that coming!
+    - What a shock!
+    - The sudden change in plans surprised me.
+    - The news left me in disbelief.
+    
+
+- intent: emotion_love
+  examples: |
+    - I feel a deep love and connection with my family.
+    - Thinking about my partner makes me experience overwhelming love.
+    - Acts of kindness from others fill my heart with love.
+    - The support of my friends gives me a warm feeling of love.
+    - I find joy and love in spending time with my pet.
+    - Expressing gratitude makes me feel a profound sense of love.
+    - The beauty of nature brings out a feeling of love in me.
+    - Helping others in need gives me a sense of love and fulfillment.
+    - I'm grateful for the love and understanding in my relationships.
+    - Engaging in creative activities brings me a sense of self-love.
+
+- intent: emotion_fear
+  examples: |
+    - I feel overwhelming fear and panic in social situations.
+    - The constant worry about the future is causing me a lot of fear.
+    - I have this intense fear of leaving my house; it's affecting my daily life.
+    - Thoughts of past trauma often trigger intense fear and anxiety.
+    - I'm afraid to talk about my mental health issues with others.
+    - The fear of being judged is preventing me from seeking help.
+    - Specific situations, like crowded places, provoke a strong sense of fear.
+    - I experience sudden, intense fear without an apparent cause.
+    - Fear of failure is making it difficult for me to pursue my goals.
+    - I'm constantly on edge, and any unexpected sound or movement triggers fear.
+
+
+- intent: coping_strategies
+  examples: |
+    - What are some effective coping strategies for stress?
+    - Can you recommend coping techniques for anxiety?
+    - How do I develop healthy coping mechanisms for depression?
+    - Share some coping strategies for dealing with overwhelming emotions.
+    - What are common coping mechanisms for managing grief?
+    - I need help finding coping strategies for daily challenges.
+    - Can you suggest coping techniques for improving mental well-being?
+    - What are some coping strategies for handling work-related stress?
+    - Share tips on building resilience as a coping mechanism.
+    - How can I incorporate mindfulness as a coping strategy?
+
+
+
+- intent: resources
+  examples: |
+    - Can you recommend reliable mental health resources?
+    - Where can I find information about coping with anxiety?
+    - Provide resources for understanding and managing depression.
+    - Share links to reputable mental health websites.
+    - What are some good resources for stress management?
+    - Can you suggest resources for dealing with grief and loss?
+    - Where can I find information about mental health hotlines?
+    - Share resources for building resilience and well-being.
+    - Provide links to articles about mindfulness practices.
+    - What are some trustworthy resources for learning about therapy options?
+    - What are some hotlines i can call?
+    - Where can i find a support group?
+    - Can you recommend a therapist?
+
+- intent: relaxation
+  examples: |
+    - What are some effective relaxation techniques?
+    - Can you suggest relaxation exercises for reducing stress?
+    - Provide tips for incorporating relaxation into a daily routine.
+    - Share techniques for promoting relaxation before bedtime.
+    - What are quick relaxation methods for high-stress situations?
+    - Can you recommend guided relaxation exercises?
+    - Share breathing exercises for relaxation.
+    - Provide information on progressive muscle relaxation.
+    - What are effective relaxation strategies for the workplace?
+    - Can you suggest mindfulness practices for relaxation?
+
+- intent: emergency
+  examples: |
+    - I need immediate help!
+    - This is an emergency, please assist.
+    - I'm in a crisis and require urgent support.
+    - Call for help, it's an emergency!
+    - I'm feeling suicidal, I need help now.
+    - I'm in danger and need immediate assistance.
+    - Urgent! I'm having a mental health crisis.
+    - It's an emergency situation; I need to talk to someone now.
+    - I'm feeling overwhelmed and need help urgently.
+    - I require immediate assistance for a mental health emergency.
+
+- intent: funny
+  examples: |
+    - Tell me a joke to lighten the mood.
+    - Share something funny to cheer me up.
+    - I could use a good laugh, tell me something funny.
+    - Make me smile with a funny story.
+    - Can you share a lighthearted joke or anecdote?
+    - I need a break from seriousness; give me something funny.
+    - Tell me a funny fact or trivia.
+    - Share a humorous quote or saying.
+    - I'm feeling down, entertain me with something funny.
+    - Bring on the humor, I could use a chuckle.
+
+- intent: thanks
+  examples: |
+    - Thank you for your help!
+    - I appreciate your assistance.
+    - Thanks a lot!
+    - Thank you for the information.
+    - I'm grateful for your support.
+    - Thanks for being so helpful.
+    - Thank you for your guidance.
+    - I want to express my thanks.
+    - Thanks a bunch!
+    - I'm thankful for your input
+
+
+
+- intent: goal_setting
+  examples: |
+    - I want to set mental health goals. Can you help?
+    - How can I establish achievable mental health goals?
+    - Assist me in defining realistic mental health objectives.
+    - Tips for setting and achieving mental health milestones?
+    - What steps should I take to work on my mental health goals?
+
+
+- intent: progress_tracking
+  examples: |
+    - How can I track my mental health progress?
+    - Is there a way to measure improvements in my mental well-being?
+    - What tools or methods can help monitor my mental health journey?
+    - I want to keep track of my emotional well-being; any suggestions?
+    - Help me understand how to assess my mental health progress.
+
+- intent: stress_management
+  examples: |
+    - Share stress management techniques.
+    - Tips for effectively managing stress?
+    - How can I incorporate stress relief into my daily routine?
+    - Coping strategies for handling work-related stress?
+    - Help me with stress reduction methods.
+
+
+- intent: self_reflection
+  examples: |
+    - I need guidance on self-reflection for mental health.
+    - How can I practice self-reflection for emotional well-being?
+    - Share self-reflection exercises for mental health.
+    - Help me understand the importance of self-reflection in mental wellness.
+    - Tips on incorporating self-reflection into my routine.
+
+- intent: motivational_boost
+  examples: |
+    - I'm feeling demotivated; can you offer encouragement?
+    - Share motivational quotes or messages.
+    - Tips for boosting motivation during challenging times?
+    - How can I stay motivated on my mental health journey?
+    - Inspire me with stories of mental health resilience.
+
+
+- intent: mindfulness_practices
+  examples: |
+    - Teach me mindfulness practices for mental well-being.
+    - How can I start practicing mindfulness?
+    - Share guided mindfulness exercises.
+    - Tips for incorporating mindfulness into a busy schedule.
+    - The benefits of mindfulness for mental health?
+
+
+- intent: family_support
+  examples: |
+    - How can I support a family member with mental health challenges?
+    - Tips for maintaining a supportive environment for someone with mental health issues.
+    - Understanding and assisting a loved one with their mental health.
+    - Resources for families dealing with mental health concerns.
+    - Encourage open communication about mental health within my family.

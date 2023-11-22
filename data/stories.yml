@@ -1,0 +1,131 @@
+version: "3.1"
+
+stories:
+- story: greet_and_introduce
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: express_gratitude
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- story: discuss_feelings
+  steps:
+  - intent: emotion_happy
+  - action: utter_happy
+  - intent: emotion_sad
+  - action: utter_sad
+  - intent: emotion_anger
+  - action: utter_emotion_anger
+  - intent: emotion_surprise
+  - action: utter_emotion_surprise
+  - intent: emotion_love
+  - action: utter_emotion_love
+  - intent: emotion_fear
+  - action: utter_emotion_fear
+
+- story: handle_stress
+  steps:
+  - intent: stress
+  - action: utter_stress_management
+
+- story: seek_resources
+  steps:
+  - intent: resources
+  - action: utter_resources
+
+- story: seek_relaxation_tips
+  steps:
+  - intent: relaxation
+  - action: utter_relaxation
+
+- story: cope_with_emergency
+  steps:
+  - intent: emergency
+  - action: utter_emergency
+
+- story: share_funny_content
+  steps:
+  - intent: funny
+  - action: utter_funny
+
+- story: express_goal_and_seek_guidance
+  steps:
+  - intent: goal_setting
+  - action: utter_goal_setting
+  - intent: progress_tracking
+  - action: utter_progress_tracking
+
+- story: reflect_on_personal_growth
+  steps:
+  - intent: self_reflection
+  - action: utter_self_reflection
+
+- story: motivate_and_encourage
+  steps:
+  - intent: motivational_boost
+  - action: utter_motivational_boost
+
+- story: integrate_mindfulness
+  steps:
+  - intent: mindfulness_practices
+  - action: utter_mindfulness_practices
+
+- story: challenging bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- story: explore_coping_strategies
+  steps:
+  - intent: coping_strategies
+  - action: utter_coping_strategies
+
+- story: inquire_about_relaxation_techniques
+  steps:
+  - intent: relaxation
+  - action: utter_relaxation
+
+- story: ask_for_help_in_an_emergency
+  steps:
+  - intent: emergency
+  - action: utter_emergency
+
+- story: seek_mental_health_resources
+  steps:
+  - intent: resources
+  - action: utter_resources
+
+- story: initiate_goal_setting_process
+  steps:
+  - intent: goal_setting
+  - action: utter_goal_setting
+  - intent: progress_tracking
+  - action: utter_progress_tracking
+
+- story: manage_stress_at_work
+  steps:
+  - intent: stress_management
+  - action: utter_stress_management
+
+- story: engage_in_self_reflection
+  steps:
+  - intent: self_reflection
+  - action: utter_self_reflection
+
+- story: overcome_demotivation
+  steps:
+  - intent: motivational_boost
+  - action: utter_motivational_boost
+
+- story: practice_mindfulness_daily
+  steps:
+  - intent: mindfulness_practices
+  - action: utter_mindfulness_practices
+
+- story: seek_support_for_family_member
+  steps:
+  - intent: family_support
+  - action: utter_family_support
