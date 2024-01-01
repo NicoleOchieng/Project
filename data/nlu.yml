@@ -16,16 +16,16 @@ nlu:
 
   - intent: goodbye
     examples: |
-      - cu
-      - good by
-      - cee you later
-      - good night
-      - bye
-      - goodbye
-      - have a nice day
-      - see you around
-      - bye bye
-      - see you later
+      - Goodbye
+      - See you later
+      - Bye
+      - Farewell
+      - Time to go
+      - Take care
+      - Until next time
+      - I'm leaving
+      - Goodnight
+      - See you soon
 
   - intent: affirm
     examples: |

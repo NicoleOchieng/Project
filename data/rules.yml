@@ -21,3 +21,9 @@ rules:
       - slot_was_set:
           - requested_slot: null
       - action: utter_thanks_name
+
+    # Rule for generating emotion detection report
+  - rule: Generate report
+    steps:
+      - intent: goodbye
+      - action: action_generate_report

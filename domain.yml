@@ -368,30 +368,8 @@ responses:
     - text: "Supporting a loved one with mental health challenges is crucial. Foster a supportive atmosphere by promoting open communication and actively listening. Educate yourself about their specific condition and explore resources together. If you have specific questions or need further guidance, feel free to ask!"
 
 actions:
-  - utter_ask_name
-  - utter_thanks_name
-  - utter_goodbye
-  - utter_affirm
-  - utter_deny
-  - utter_bot_challenge
-  - utter_stress
-  - utter_emotion_anxiety
-  - utter_emotion_anger
-  - utter_emotion_surprise
-  - utter_emotion_love
-  - utter_funny
-  - utter_thanks
-  - utter_goal_setting
-  - utter_progress_tracking
-  - utter_stress_management
-  - utter_self_reflection
-  - utter_motivational_boost
-  - utter_mindfulness_practices
-  - utter_family_support
-  - utter_relaxation
-  - utter_coping_strategies
-  - utter_resources
-  - utter_emergency
+  - action_generate_report
+  - action_hello_world
 
 session_config:
   session_expiration_time: 60
