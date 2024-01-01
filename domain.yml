@@ -1,7 +1,26 @@
 version: "3.1"
 
+entities:
+  - name
+
+slots:
+  name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: name_form
+            requested_slot: name
+
+forms:
+  name_form:
+    required_slots:
+      - name
+
 intents:
   - greet
+  - provide_name
   - goodbye
   - affirm
   - deny
@@ -29,13 +48,41 @@ intents:
   - family_support
 
 responses:
-  utter_greet:
-    - text: "Hey! How are you?"
-    - text: "Hey there! How are you doing today?"
-    - text: "Hello! It's great to see you. How can I help?"
-    - text: "Hi! I hope you're having a fantastic day. How can I assist you?"
-    - text: "Greetings! How's everything going for you?"
-    - text: "Hello! I'm here and ready to chat. How can I support you?"
+  utter_ask_name:
+    - text: Hi! Welcome. What's your name?
+    - text: Hello! It's great to have you here. May I know your name?
+    - text: Hey! Nice to see you. What should I call you?
+    - text: Greetings! Before we start, could you share your name with me?
+    - text: Good day! I'm here to help. What's your name?
+    - text: Hi, how are you? By the way, what's your name?
+    - text: Hi, what's up? I'm eager to assist. Can you tell me your name?
+    - text: Hello, nice to meet you! What's your name, if you don't mind sharing?
+    - text: Hey there! Before we proceed, could you let me know your name?
+    - text: Hi! How can I assist you today? Also, may I know your name?
+
+  utter_thanks_name:
+    - text: Thanks, {name}! How can I assist you today?
+    - text: Thank you, {name}! What can I help you with now?
+    - text: Appreciate it, {name}! How may I assist you further?
+    - text: Thanks for sharing, {name}! How can I be of service to you today?
+    - text: Thank you, {name}! Is there anything specific you'd like help with?
+    - text: Awesome, {name}! How may I assist you on this fine day?
+    - text: Much obliged, {name}! What can I do for you right now?
+    - text: Thanks a bunch, {name}! How can I make your experience better?
+    - text: Thank you, {name}! Anything you'd like to discuss or inquire about?
+    - text: Thanks, {name}! Is there a particular task or question on your mind?
+
+  utter_affirm:
+    - text: "Great! I'm here to help in any way I can."
+    - text: "Yes, that makes sense. How can I assist you further?"
+    - text: "Of course! If you have any questions, feel free to ask."
+    - text: "Indeed! Is there anything specific you'd like to discuss?"
+    - text: "Absolutely. Let me know how I can support you."
+    - text: "Correct. If there's anything on your mind, I'm here to listen."
+    - text: "Sure thing! I'm here for you. What would you like to talk about?"
+    - text: "That sounds good. If you need assistance, just let me know."
+    - text: "Certainly. If you have any concerns, I'm here to address them."
+    - text: "Agreed. How can I be of service to you today?"
 
   utter_cheer_up:
     - text: "Here is something to cheer you up:"
@@ -56,18 +103,6 @@ responses:
     - text: "Cya! If there's anything else on your mind, let me know."
     - text: "Goodbye! Remember, I'm here whenever you need support."
     - text: "See you around! Feel free to return whenever you'd like."
-
-  utter_affirm:
-    - text: "Great! I'm here to help in any way I can."
-    - text: "Yes, that makes sense. How can I assist you further?"
-    - text: "Of course! If you have any questions, feel free to ask."
-    - text: "Indeed! Is there anything specific you'd like to discuss?"
-    - text: "Absolutely. Let me know how I can support you."
-    - text: "Correct. If there's anything on your mind, I'm here to listen."
-    - text: "Sure thing! I'm here for you. What would you like to talk about?"
-    - text: "That sounds good. If you need assistance, just let me know."
-    - text: "Certainly. If you have any concerns, I'm here to address them."
-    - text: "Agreed. How can I be of service to you today?"
 
   utter_deny:
     - text: "Okay, no problem. If you ever change your mind, I'm here to chat."
@@ -334,12 +369,11 @@ responses:
     - text: "Supporting a loved one with mental health challenges is crucial. Foster a supportive atmosphere by promoting open communication and actively listening. Educate yourself about their specific condition and explore resources together. If you have specific questions or need further guidance, feel free to ask!"
 
 actions:
-  - utter_greet
+  - utter_ask_name
+  - utter_thanks_name
   - utter_goodbye
   - utter_affirm
   - utter_deny
-  - utter_happy
-  - utter_sad
   - utter_bot_challenge
   - utter_stress
   - utter_emotion_anxiety

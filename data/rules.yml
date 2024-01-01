@@ -1,13 +1,24 @@
+# Rules are a type of training data used to train your assistant's dialogue management model.
+# Rules describe short pieces of conversations that should always follow the same path.
+
 version: "3.1"
 
 rules:
+  # Rule for getting the user's name using a form at the start of the conversation
+  - rule: Activate name form
+    conversation_start: true
+    steps:
+      - intent: greet
+      - action: name_form
+      - active_loop: name_form
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_bot_challenge
+  # Rule for storing the user's name in a slot
+  - rule: Submit form
+    condition:
+      - active_loop: name_form
+    steps:
+      - action: name_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_thanks_name
