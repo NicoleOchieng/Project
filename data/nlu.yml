@@ -3,16 +3,16 @@ version: "3.1"
 nlu:
   - intent: greet
     examples: |
-      - Hi there!
-       - Hello!
-       - Hey!
-       - Greetings!
-       - Good day!
-       - Hi, how are you?
-       - Hi, what's up?
-       - Hello, how can I help you?
-       - Hey, nice to see you!
-       - Hi, it's good to connect with you!
+      - Hi there
+      - Hello
+      - Hey
+      - Greetings
+      - Good day
+      - Hi, how are you?
+      - Hi, what's up?
+      - Hello, how can I help you?
+      - Hey, nice to see you
+      - Hi, it's good to connect with you
 
   - intent: goodbye
     examples: |

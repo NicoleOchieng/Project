@@ -20,7 +20,6 @@ forms:
 
 intents:
   - greet
-  - provide_name
   - goodbye
   - affirm
   - deny
