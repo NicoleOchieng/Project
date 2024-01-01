@@ -1,11 +1,6 @@
 version: "3.1"
 
 stories:
-  - story: greet_and_introduce
-    steps:
-      - intent: greet
-      - action: utter_greet
-
   - story: express_gratitude
     steps:
       - intent: thanks
@@ -14,9 +9,9 @@ stories:
   - story: discuss_feelings
     steps:
       - intent: emotion_happy
-      - action: utter_happy
+      - action: utter_emotion_happy
       - intent: emotion_sad
-      - action: utter_sad
+      - action: utter_emotion_sad
       - intent: emotion_anger
       - action: utter_emotion_anger
       - intent: emotion_surprise
