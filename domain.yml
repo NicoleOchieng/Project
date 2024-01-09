@@ -370,21 +370,17 @@ responses:
     - text: "Supporting a loved one with mental health challenges is crucial. Foster a supportive atmosphere by promoting open communication and actively listening. Educate yourself about their specific condition and explore resources together. If you have specific questions or need further guidance, feel free to ask!"
 
 utter_suicidal:
-    - text: "I'm here to chat, but for more comprehensive support, consider reaching out to a mental health professional or counselor. They have the expertise to help you navigate through difficult times."
-    - text: "Your feelings are important, and seeking help from a mental health professional can make a significant difference. Please consider reaching out to a counselor or therapist to discuss your emotions and thoughts in more depth."
-    - text: "I understand it's tough for you right now. There are online resources that can provide support. You might find helpful information on [https://www.beyondblue.org.au/]. It's important to reach out to friends, family, or a mental health professional as well."
-
+  - text: "I'm here to chat, but for more comprehensive support, consider reaching out to a mental health professional or counselor. They have the expertise to help you navigate through difficult times."
+  - text: "Your feelings are important, and seeking help from a mental health professional can make a significant difference. Please consider reaching out to a counselor or therapist to discuss your emotions and thoughts in more depth."
+  - text: "I understand it's tough for you right now. There are online resources that can provide support. You might find helpful information on [https://www.beyondblue.org.au/]. It's important to reach out to friends, family, or a mental health professional as well."
 
 utter_please_rephrase:
-    - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
-
-
+  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
 
 actions:
   - action_generate_report
   - action_hello_world
   - action_default_feedback
-
 
 session_config:
   session_expiration_time: 60
