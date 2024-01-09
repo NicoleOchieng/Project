@@ -360,3 +360,27 @@ nlu:
       - Understanding and assisting a loved one with their mental health.
       - Resources for families dealing with mental health concerns.
       - Encourage open communication about mental health within my family.
+
+  - intent: suicidal
+    examples: |
+      - I don't think anyone cares about me.
+      - I'm so lonely and can't find a reason to keep going.
+      - "Everything is just too much right now.
+      - I can't handle the stress anymore.
+      - I need help right now.
+      - I'm in a crisis and don't know what to do.
+      - I don't want to burden my friends with my problems.
+      - I feel like nobody understands what I'm going through.
+      - Are there any online resources for people feeling like me
+      - I want to kill myself
+      - I do not want to live anymore
+      - I feel like hurting mysyelf
+      - Things are so heavy right now
+      - Is there someone i can talk to
+      - Is there a hotline number i can call?
+
+  - intent: out_of_scope
+    examples: |
+      - I want to order food
+      - What is 2 + 2?
+      - Who's the US President?  

@@ -8,6 +8,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
 
+
 class ActionHelloWorld(Action):
 
     def name(self) -> Text:
@@ -32,12 +33,15 @@ class ActionGenerateReport(Action):
         
         classifier = pipeline(task="text-classification", model="SamLowe/roberta-base-go_emotions", top_k=None)
 
+        #stores all the messages of the users
         user_messages = [event.get("text") for event in tracker.events if event["event"] == "user"]
 
+        #running user messages into the classifier to get the results
         model_outputs = classifier(user_messages)
         report = model_outputs[0]
 
-        pdf_filename = "/Users/kelvinkimutai/Desktop/emotion_report.pdf"
+        #path to store the pdf
+        pdf_filename = r"C:\Users\ADMIN\Desktop\emotion_report.pdf"
         dynamic_html = generate_dynamic_html(report)
         save_html_to_pdf(dynamic_html, pdf_filename)
 
@@ -122,7 +126,9 @@ def generate_dynamic_html(report: List[Dict[Text, Any]]) -> str:
     return html_content
 
 def save_html_to_pdf(html_content: str, pdf_filename: str):
-    pdfkit.from_string(html_content, pdf_filename)
+    path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+    config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
+    pdfkit.from_string(html_content, pdf_filename, configuration=config)
     
         
     

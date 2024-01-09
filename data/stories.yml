@@ -1,126 +1,249 @@
-version: "3.1"
-
 stories:
-  - story: express_gratitude
-    steps:
-      - intent: thanks
-      - action: utter_thanks
+- story: greet_and_introduce
+  steps:
+  - intent: greet
+  - action: utter_greet
 
-  - story: discuss_feelings
-    steps:
-      - intent: emotion_happy
-      - action: utter_emotion_happy
-      - intent: emotion_sad
-      - action: utter_emotion_sad
-      - intent: emotion_anger
-      - action: utter_emotion_anger
-      - intent: emotion_surprise
-      - action: utter_emotion_surprise
-      - intent: emotion_love
-      - action: utter_emotion_love
-      - intent: emotion_fear
-      - action: utter_emotion_fear
+- story: express_gratitude
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+  - intent: gratitude_reason
+  - action: utter_ask_gratitude_reason
 
-  - story: handle_stress
-    steps:
-      - intent: stress
-      - action: utter_stress_management
+- story: discuss_feelings
+  steps:
+  - intent: emotion_happy
+  - action: utter_happy
+  - intent: discuss_feeling_reason
+  - action: utter_ask_feeling_reason
 
-  - story: seek_resources
-    steps:
-      - intent: resources
-      - action: utter_resources
+- story: discuss_sadness
+  steps:
+  - intent: emotion_sad
+  - action: utter_sad
+  - intent: discuss_sadness_reason
+  - action: utter_ask_sadness_reason
 
-  - story: seek_relaxation_tips
-    steps:
-      - intent: relaxation
-      - action: utter_relaxation
+- story: discuss_anger
+  steps:
+  - intent: emotion_anger
+  - action: utter_emotion_anger
+  - intent: discuss_anger_reason
+  - action: utter_ask_anger_reason
 
-  - story: cope_with_emergency
-    steps:
-      - intent: emergency
-      - action: utter_emergency
+- story: discuss_surprise
+  steps:
+  - intent: emotion_surprise
+  - action: utter_emotion_surprise
+  - intent: discuss_surprise_reason
+  - action: utter_ask_surprise_reason
 
-  - story: share_funny_content
-    steps:
-      - intent: funny
-      - action: utter_funny
+- story: discuss_love
+  steps:
+  - intent: emotion_love
+  - action: utter_emotion_love
+  - intent: discuss_love_reason
+  - action: utter_ask_love_reason
 
-  - story: express_goal_and_seek_guidance
-    steps:
-      - intent: goal_setting
-      - action: utter_goal_setting
-      - intent: progress_tracking
-      - action: utter_progress_tracking
+- story: discuss_fear
+  steps:
+  - intent: emotion_fear
+  - action: utter_emotion_fear
+  - intent: discuss_fear_reason
+  - action: utter_ask_fear_reason
 
-  - story: reflect_on_personal_growth
-    steps:
-      - intent: self_reflection
-      - action: utter_self_reflection
+- story: handle_stress
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: stress
+  - action: utter_stress_management
+  - intent: stress_response
+  - action: utter_ask_stress_response
+  - intent: thanks
+  - action: utter_thanks
 
-  - story: motivate_and_encourage
-    steps:
-      - intent: motivational_boost
-      - action: utter_motivational_boost
+- story: seek_resources
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: resources
+  - action: utter_resources
+  - intent: resource_needs
+  - action: utter_ask_resource_needs
+  - intent: thanks
+  - action: utter_thanks
 
-  - story: integrate_mindfulness
-    steps:
-      - intent: mindfulness_practices
-      - action: utter_mindfulness_practices
+- story: seek_relaxation_tips
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: stress
+  - action: utter_stress_management
+  - intent: relaxation
+  - action: utter_relaxation
+  - intent: relaxation_preferences
+  - action: utter_ask_relaxation_preferences
+  - intent: thanks
+  - action: utter_thanks
 
-  - story: challenging bot
-    steps:
-      - intent: bot_challenge
-      - action: utter_bot_challenge
+- story: cope_with_emergency
+  steps:
+  - intent: emergency
+  - action: utter_emergency
+  - intent: emergency_instructions
+  - action: utter_ask_emergency_instructions
+  - intent: thanks
+  - action: utter_thanks
 
-  - story: explore_coping_strategies
-    steps:
-      - intent: coping_strategies
-      - action: utter_coping_strategies
+- story: share_funny_content
+  steps:
+  - intent: emotion_anxiety
+  - action: utter_emotion_anxiety
+  - intent: funny
+  - action: utter_funny
+  - intent: ask_for_more_funny_content
+  - action: utter_ask_for_more_funny_content
 
-  - story: inquire_about_relaxation_techniques
-    steps:
-      - intent: relaxation
-      - action: utter_relaxation
+- story: express_goal_and_seek_guidance
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goal_setting
+  - action: utter_goal_setting
+  - intent: set_goal
+  - action: utter_ask_set_goal
+  - intent: progress_tracking
+  - action: utter_progress_tracking
+  - intent: thanks
+  - action: utter_thanks
 
-  - story: ask_for_help_in_an_emergency
-    steps:
-      - intent: emergency
-      - action: utter_emergency
+- story: reflect_on_personal_growth
+  steps:
+  - intent: self_reflection
+  - action: utter_self_reflection
+  - intent: ask_self_reflection
+  - action: utter_ask_self_reflection
+  - intent: thanks
+  - action: utter_thanks
 
-  - story: seek_mental_health_resources
-    steps:
-      - intent: resources
-      - action: utter_resources
+- story: motivate_and_encourage
+  steps:
+  - intent: motivational_boost
+  - action: utter_motivational_boost
+  - intent: affirm
+  - action: utter_affirm
+  - intent: ask_for_more_motivation
+  - action: utter_ask_for_more_motivation
+  - intent: thanks
+  - action: utter_thanks
 
-  - story: initiate_goal_setting_process
-    steps:
-      - intent: goal_setting
-      - action: utter_goal_setting
-      - intent: progress_tracking
-      - action: utter_progress_tracking
+- story: integrate_mindfulness
+  steps:
+  - intent: mindfulness_practices
+  - action: utter_mindfulness_practices
+  - intent: ask_for_mindfulness_tips
+  - action: utter_ask_for_mindfulness_tips
+  - intent: thanks
+  - action: utter_thanks
 
-  - story: manage_stress_at_work
-    steps:
-      - intent: stress_management
-      - action: utter_stress_management
+- story: challenging_bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+  - intent: ask_for_more_challenges
+  - action: utter_ask_for_more_challenges
 
-  - story: engage_in_self_reflection
-    steps:
-      - intent: self_reflection
-      - action: utter_self_reflection
+- story: explore_coping_strategies
+  steps:
+  - intent: coping_strategies
+  - action: utter_coping_strategies
+  - intent: ask_for_coping_strategies
+  - action: utter_ask_for_coping_strategies
 
-  - story: overcome_demotivation
-    steps:
-      - intent: motivational_boost
-      - action: utter_motivational_boost
+- story: inquire_about_relaxation_techniques
+  steps:
+  - intent: relaxation
+  - action: utter_relaxation
+  - intent: ask_about_relaxation_techniques
+  - action: utter_ask_about_relaxation_techniques
 
-  - story: practice_mindfulness_daily
-    steps:
-      - intent: mindfulness_practices
-      - action: utter_mindfulness_practices
+- story: ask_for_help_in_an_emergency
+  steps:
+  - intent: emergency
+  - action: utter_emergency
+  - intent: ask_for_help_instructions
+  - action: utter_ask_for_help_instructions
 
-  - story: seek_support_for_family_member
-    steps:
-      - intent: family_support
-      - action: utter_family_support
+- story: seek_mental_health_resources
+  steps:
+  - intent: resources
+  - action: utter_resources
+  - intent: ask_for_more_resources
+  - action: utter_ask_for_more_resources
+
+- story: initiate_goal_setting_process
+  steps:
+  - intent: goal_setting
+  - action: utter_goal_setting
+  - intent: set_goal
+  - action: utter_ask_set_goal
+  - intent: progress_tracking
+  - action: utter_progress_tracking
+  - intent: thanks
+  - action: utter_thanks
+
+- story: manage_stress_at_work
+  steps:
+  - intent: stress_management
+  - action: utter_stress_management
+  - intent: ask_for_work_stress_tips
+  - action: utter_ask_for_work_stress_tips
+  - intent: thanks
+  - action: utter_thanks
+
+- story: engage_in_self_reflection
+  steps:
+  - intent: self_reflection
+  - action: utter_self_reflection
+  - intent: ask_self_reflection
+  - action: utter_ask_self_reflection
+  - intent: thanks
+  - action: utter_thanks
+
+- story: overcome_demotivation
+  steps:
+  - intent: motivational_boost
+  - action: utter_motivational_boost
+  - intent: ask_for_more_motivation
+  - action: utter_ask_for_more_motivation
+  - intent: thanks
+  - action: utter_thanks
+
+- story: practice_mindfulness_daily
+  steps:
+  - intent: mindfulness_practices
+  - action: utter_mindfulness_practices
+  - intent: ask_for_daily_mindfulness_tips
+  - action: utter_ask_for_daily_mindfulness_tips
+  - intent: thanks
+  - action: utter_thanks
+
+- story: seek_support_for_family_member
+  steps:
+  - intent: family_support
+  - action: utter_family_support
+  - intent: ask_for_family_support_tips
+  - action: utter_ask_for_family_support_tips
+  - intent: thanks
+  - action: utter_thanks
+
+- story: seek_support_from_suicidal thoughts
+  steps:
+  - intent: suicidal
+  - action: utter_suicidal
+  - intent: ask_for_family_support_tips
+  - action: utter_ask_for_family_support_tips
+  - intent: thanks
+  - action: utter_thanks

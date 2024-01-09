@@ -27,3 +27,9 @@ rules:
     steps:
       - intent: goodbye
       - action: action_generate_report
+    
+
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
