@@ -89,3 +89,5 @@ rasa/keys
 # Local Netlify folder
 .netlify
 rasa.code-workspace
+
+tf_model.h5
