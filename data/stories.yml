@@ -1,9 +1,5 @@
 stories:
-  - story: greet_and_introduce
-    steps:
-      - intent: greet
-      - action: utter_greet
-
+  
   - story: express_gratitude
     steps:
       - intent: thanks
