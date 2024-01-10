@@ -1,10 +1,9 @@
 stories:
-  
   - story: express_gratitude
     steps:
       - intent: thanks
       - action: utter_thanks
-     
+
   - story: discuss_feelings
     steps:
       - intent: emotion_happy
@@ -130,7 +129,6 @@ stories:
     steps:
       - intent: bot_challenge
       - action: utter_bot_challenge
-
 
   - story: explore_coping_strategies
     steps:

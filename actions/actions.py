@@ -1,6 +1,6 @@
 from typing import Any, Text, Dict, List
-from transformers import pipeline
 from datetime import datetime
+from ktrain import load_predictor
 
 import pdfkit
 
@@ -40,36 +40,41 @@ class ActionGenerateReport(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        classifier = pipeline(task="text-classification", model="SamLowe/roberta-base-go_emotions", top_k=None)
+        predictor = load_predictor(r"C:\Users\ADMIN\Project")
+        # text_to_predict = "This is an example text for emotion classification."
+        text_to_predict = [event.get("text") for event in tracker.events if event["event"] == "user"]
+        paragraph = ". ".join(text_to_predict)
+        predicted_emotion= ''
+        predicted_class = predictor.predict(paragraph)
 
-        #stores all the messages of the users
-        user_messages = [event.get("text") for event in tracker.events if event["event"] == "user"]
+        emotion_mapping = {
+            0: "sadness",
+            1: "joy",
+            2: "love",
+            3: "anger",
+            4: "fear",
+            5: "surprise"
+        }
 
-        #running user messages into the classifier to get the results
-        model_outputs = classifier(user_messages)
-        report = model_outputs[0]
+        if predicted_class in emotion_mapping:
+            predicted_emotion = emotion_mapping[predicted_class]
+        else:
+            print("Invalid predicted class.")
 
-        #path to store the pdf
+    
+        print(f"Predicted emotion: {predicted_emotion}")
+        
         pdf_filename = r"C:\Users\ADMIN\Desktop\emotion_report.pdf"
-        dynamic_html = generate_dynamic_html(report)
+        name = tracker.get_slot('name')
+        dynamic_html = generate_dynamic_html(predicted_emotion,name)
         save_html_to_pdf(dynamic_html, pdf_filename)
 
         dispatcher.utter_message(text=f"Bye bye! If you ever need assistance, I'll be here. Also, here is a report on your emotional wellness:\n{pdf_filename}")
 
         return []
     
-def generate_dynamic_html(report: List[Dict[Text, Any]]) -> str:
+def generate_dynamic_html(predicted_emotion: str,name: str) -> str:
     # Define the dynamic HTML content
-    # Extract labels and scores
-    labels = [emotion['label'] for emotion in report]
-    scores = [emotion['score'] for emotion in report]
-
-    # Sort data by scores in descending order
-    sorted_indices = sorted(range(len(scores)), key=lambda k: scores[k], reverse=True)
-    sorted_labels = [labels[i] for i in sorted_indices]
-    sorted_scores = [scores[i] for i in sorted_indices]
-
-    name='Kelvin'
     time=(datetime.now()).strftime("%H:%M:%S %Y-%m-%d")
 
     # Generate the HTML for the bar graph
@@ -122,10 +127,7 @@ def generate_dynamic_html(report: List[Dict[Text, Any]]) -> str:
                 <h1>Emotional Detection Report</h1>
                 <p>Name: {name}</p>
                 <p>Time: {time}</p>
-                <p>Dominant Emotion: {sorted_labels[0]}</p>
-            </div>
-             <div class="bar-graph">
-                {"".join([f"<div style='width: 100%'><p>{int(score * 100)}% - {label}</p><div style='width: 100%''><div class='bar' style='width: {score * 100}%;'></div></div>" for i, (label, score) in enumerate(zip(sorted_labels, sorted_scores))])}
+                <p>Predicted Emotion: {predicted_emotion}</p>
             </div>
         </div>
     </body>

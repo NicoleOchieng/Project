@@ -50,12 +50,12 @@ intents:
   - relaxation_preferences
   - consolation_fear
   - emergency_instructions
-  - discuss_happiness_reason
-  - discuss_sadness_reason
-  - discuss_anger_reason
-  - discuss_surprise_reason
+  - discuss_hapiness_reason
   - discuss_love_reason
   - discuss_fear_reason
+  - discuss_sadness_reason
+  - discuss_surprise_reason
+  - discuss_anger_reason
 
 responses:
   utter_ask_name:
@@ -213,7 +213,6 @@ responses:
     - text: "Feeling anxious about seeking help is understandable. I'm here to support you on your mental health journey."
     - text: "Experiencing anxiety when discussing mental health is common. If you want to talk, I'm here to listen without judgment."
     - text: "The uncertainty of your mental health journey causing anxiety is understandable. How can I assist you in navigating through this uncertainty?"
-    
 
   utter_emotion_anger:
     - text: "I hear your frustration with the situation. It's okay to feel angry. How can I assist you in managing this anger?"
@@ -302,7 +301,6 @@ responses:
     - text: "I'm really sorry to hear that you're feeling this way. It's important to talk to someone who can help. Reach out to a mental health professional, a trusted friend, or family member. If you're in immediate danger, please call emergency services in your country. You're not alone, and help is available."
     - text: "I'm here to support you, but it's crucial to reach out to someone who can provide the help you need. Consider talking to a mental health professional or contacting a crisis hotline. If it's an immediate threat, please call emergency services in your area. Your well-being is important, and help is available."
     - text: "I'm sorry that you're going through this. It's important to seek help from professionals or people you trust. Connect with a mental health professional, a friend, or a family member. In case of immediate danger, call emergency services in your country. You're not alone, and support is available."
-
 
   utter_funny:
     - text: "Sure, here's a joke to brighten your day: Why don't scientists trust atoms? Because they make up everything!"
@@ -395,7 +393,7 @@ responses:
     - text: "Watching a good movie can be a great escape! Do you have a favorite genre or movie that you find particularly relaxing?"
     - text: "Practicing mindfulness is a valuable skill. How do you incorporate mindfulness into your daily routine?"
     - text: "Cooking and trying new recipes is a delightful way to relax! Any favorite dishes or cuisines you enjoy preparing?"
-  
+
   utter_consolation_fear:
     - text: "I'm sorry to hear that you're feeling afraid. It's completely normal to experience fear, and you're not alone. If you're comfortable, feel free to share more about what's on your mind, and I'm here to listen and offer support."
     - text: "Feeling fear is a challenging emotion. Remember that it's okay to feel this way. If you'd like to talk about what's causing your fear or anything specific you're struggling with, I'm here for you."
@@ -410,7 +408,7 @@ responses:
 actions:
   - action_generate_report
   - action_hello_world
-  - action_default_feedback
+  - action_default_fallback
 
 session_config:
   session_expiration_time: 60
