@@ -139,7 +139,7 @@ def generate_dynamic_html(predicted_emotion: str,name: str) -> str:
     return html_content
 
 def save_html_to_pdf(html_content: str, pdf_filename: str):
-    path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+    path_wkhtmltopdf = r"C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe"
     config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
     pdfkit.from_string(html_content, pdf_filename, configuration=config)
     
