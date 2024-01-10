@@ -92,4 +92,5 @@ rasa.code-workspace
 
 tf_model.h5
 tf_model.prepoc
+/actions/__pycache__
 
