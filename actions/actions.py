@@ -3,9 +3,11 @@ from datetime import datetime
 from ktrain import load_predictor
 
 import pdfkit
+import time
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from keras.models import load_model
 
 
 class ActionDefaultFallback(Action):
