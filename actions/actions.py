@@ -3,9 +3,11 @@ from transformers import pipeline
 from datetime import datetime
 
 import pdfkit
+import time
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from keras.models import load_model
 
 
 class ActionDefaultFallback(Action):
@@ -39,6 +41,19 @@ class ActionGenerateReport(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        model_path = '/Users/kelvinkimutai/Documents/Projects/rasa/chat-bot/tf_model.h5'
+        model = load_model(model_path)
+
+        # Example message
+        message = 'He bought me flowers'
+
+        start_time = time.time()
+        prediction = model.predict(message)
+
+        print('predicted: {} ({:.2f})'.format(prediction, (time.time() - start_time)))
+        
+        return []
         
         classifier = pipeline(task="text-classification", model="SamLowe/roberta-base-go_emotions", top_k=None)
 
