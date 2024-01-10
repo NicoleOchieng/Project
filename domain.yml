@@ -50,6 +50,12 @@ intents:
   - relaxation_preferences
   - consolation_fear
   - emergency_instructions
+  - discuss_happiness_reason
+  - discuss_sadness_reason
+  - discuss_anger_reason
+  - discuss_surprise_reason
+  - discuss_love_reason
+  - discuss_fear_reason
 
 responses:
   utter_ask_name:

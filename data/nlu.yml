@@ -398,7 +398,7 @@ nlu:
       - I enjoy practicing mindfulness to stay calm.
       - Cooking and trying new recipes is my way of relaxation.
 
-  - intent: discuss_hapiness_reason
+  - intent: discuss_happiness_reason
     examples: |
       - The reason I'm feeling so positive is because of my recent achievements.
       - I feel great because I had a successful therapy session.

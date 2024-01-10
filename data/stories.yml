@@ -9,7 +9,7 @@ stories:
     steps:
       - intent: emotion_happy
       - action: utter_emotion_happy
-      - intent: discuss_hapiness_reason
+      - intent: discuss_happiness_reason
       - action: utter_affirm
 
   - story: discuss_sadness
