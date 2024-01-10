@@ -384,3 +384,181 @@ nlu:
       - I want to order food
       - What is 2 + 2?
       - Who's the US President?  
+
+  - intent: relaxation_preferences
+    examples: |
+      - I love spending my free time doing relaxing activities like reading.
+      - Yoga is my favorite way to unwind after a long day.
+      - Meditation helps me relax and clear my mind.
+      - Listening to soothing music is my go-to relaxation method.
+      - I find comfort in taking long walks in nature.
+      - A hot bath with candles is how I like to de-stress.
+      - Spending time with my pets is the best way for me to relax.
+      - Watching a good movie helps me unwind.
+      - I enjoy practicing mindfulness to stay calm.
+      - Cooking and trying new recipes is my way of relaxation.
+
+  - intent: discuss_hapiness_reason
+    examples: |
+      - The reason I'm feeling so positive is because of my recent achievements.
+      - I feel great because I had a successful therapy session.
+      - Engaging in self-care activities is the reason for my happiness.
+      - Reflecting on my progress in my mental health journey brings me joy.
+      - The support of my friends is the reason I'm in a good mood.
+      - I'm feeling amazing due to the breakthroughs I've had in my mental health.
+      - Learning new coping mechanisms has contributed to my positive mood.
+      - Practicing mindfulness regularly is the reason behind my contentment.
+      - Celebrating moments of self-love is making me genuinely happy.
+      - Positive changes in my life are the reason I'm feeling so good.
+      - The joy from small victories is the reason behind my positive mindset.
+      - Connecting with supportive people boosts my mental well-being.
+      - The reason I'm super stoked is because of exciting upcoming plans.
+      - The source of my extreme happiness is achieving personal goals.
+      - So perfect because I'm focusing on my overall well-being.
+      - I'm feeling great due to the positive impact of my favorite activities.
+
+  - intent: discuss_sadness_reason
+    examples: |
+      - The reason for my sadness is a recent loss in my life.
+      - I feel sad because of ongoing challenges at work.
+      - Coping with a breakup is causing me a lot of sadness.
+      - Reflecting on past traumas brings a sense of deep sadness.
+      - The isolation due to the pandemic is contributing to my sadness.
+      - I'm feeling down because of health issues I'm facing.
+      - Financial struggles are a significant source of my sadness.
+      - My current living situation is making me feel constantly sad.
+      - I'm experiencing family issues that are causing my sadness.
+      - The pressure to meet societal expectations is making me feel sad.
+      - I'm struggling with self-esteem, and it's contributing to my sadness.
+      - The loss of a job has been a major factor in my feelings of sadness.
+      - A lack of support from friends is making me feel isolated and sad.
+      - Feeling misunderstood in my relationships is a significant source of sadness.
+      - The challenges in my mental health journey are overwhelming, leading to sadness.
+      - I'm finding it hard to cope with the uncertainties in my life, and it's making me sad.
+      - Witnessing injustice in the world and feeling powerless contributes to my sadness.
+      - The impact of past experiences on my self-worth is causing ongoing feelings of sadness.
+      - Loneliness and a lack of social connections are significant contributors to my sadness.
+  
+  - intent: discuss_anger_reason
+    examples: |
+      - I'm feeling angry because of a disagreement with a friend.
+      - Ongoing workplace issues are causing me a lot of anger.
+      - A misunderstanding with a family member is making me feel angry.
+      - I'm angry about a recent negative experience I had.
+      - The stress from daily challenges is contributing to my anger.
+      - Dealing with unfair treatment at work is making me feel angry.
+      - I'm frustrated with myself for not meeting personal goals, and it's causing anger.
+      - Feeling unheard in my relationships is a significant source of my anger.
+      - The impact of systemic injustices in society makes me angry.
+      - I'm experiencing anger due to a sense of powerlessness in certain situations.
+      - I'm angry about the lack of support for mental health in my community.
+      - A recent betrayal by someone I trusted is causing intense feelings of anger.
+      - I feel angry about the state of the world and the challenges we're facing.
+      - Ongoing conflicts in my personal relationships contribute to my anger.
+      - I'm angry because I feel misunderstood by those around me.
+      - A perceived injustice in my life is a significant factor in my feelings of anger.
+      - I'm frustrated with the lack of control I have over certain aspects of my life.
+      - The pressure to conform to societal expectations is making me feel angry.
+      - A history of unresolved conflicts with a friend is contributing to my anger.
+      - I'm angry about the impact of past traumas on my mental well-being.
+
+  - intent: discuss_surprise_reason
+    examples: |
+      - I'm feeling surprised because of an unexpected gift I received.
+      - A sudden turn of events at work caught me by surprise.
+      - A surprising revelation in my personal life has left me feeling amazed.
+      - Unexpected good news has filled me with a sense of surprise.
+      - I'm surprised by the positive outcome of a recent situation.
+      - A sudden change in plans has taken me by surprise.
+      - A surprising achievement in my goals has left me feeling excited.
+      - An unforeseen opportunity that arose has left me pleasantly surprised.
+      - A spontaneous gesture of kindness from a friend has caught me off guard.
+      - I'm feeling surprised by the success of a recent project I worked on.
+      - An unexpected reunion with a loved one has left me feeling joyful.
+      - Surprising support from someone I didn't expect has made my day.
+      - I'm surprised by the positive impact of a recent decision I made.
+      - A sudden breakthrough in my work has filled me with a sense of surprise.
+      - Unexpected recognition for my efforts has left me feeling grateful.
+      - A surprising twist in a situation has sparked my curiosity.
+      - I'm feeling surprised by the generosity of others around me.
+      - A pleasant surprise in my day has lifted my spirits.
+      - Unexpectedly good weather has brought me a sense of surprise and delight.
+      - Surprising news about a personal achievement has left me feeling proud.
+
+  - intent: discuss_love_reason
+    examples: |
+      - The reason for my deep love is the unwavering support I receive from my family.
+      - I feel overwhelming love for my partner because of their kindness and understanding.
+      - Acts of kindness from others contribute to my feelings of love and gratitude.
+      - The genuine support and camaraderie of my friends make me feel a deep sense of love.
+      - Spending quality time with my pet brings me love through companionship and joy.
+      - Expressing gratitude is a reason for the profound sense of love I experience.
+      - The beauty of nature inspires feelings of love and connection within me.
+      - Helping others in need is a fulfilling reason for the sense of love I feel.
+      - Love and understanding in my relationships are reasons for my overall sense of gratitude.
+      - Engaging in creative activities is a source of self-love and fulfillment for me.
+  
+  - intent: discuss_fear_reason
+    examples: |
+      - I feel fear due to a recent traumatic experience.
+      - Ongoing uncertainties in my life are causing me a lot of fear.
+      - The pressure to meet expectations at work is a significant source of my fear.
+      - I'm afraid of the potential consequences of a decision I need to make.
+      - The fear of failure is holding me back from pursuing my goals.
+      - Social situations trigger feelings of fear and anxiety for me.
+      - A past traumatic event contributes to my ongoing feelings of fear.
+      - I'm afraid of the unknown and what the future holds for me.
+      - The fear of judgment from others is a constant source of anxiety.
+      - I experience fear when faced with situations outside my comfort zone.
+      - A specific phobia is causing me intense feelings of fear.
+      - I feel fear when thinking about my personal insecurities.
+      - The fear of rejection in relationships is a significant source of anxiety.
+      - I'm afraid of the impact of past mistakes on my present and future.
+      - The fear of change is causing me stress and anxiety.
+      - My fear is linked to the challenges I face in my mental health journey.
+      - I experience fear related to health concerns and uncertainties.
+      - The fear of losing loved ones is a constant source of anxiety for me.
+      - I feel fear due to the overwhelming demands of daily life.
+      - Social expectations and pressures contribute to my feelings of fear.
+
+  - intent: emotion_stress
+    examples: |
+      - I'm feeling stressed about work deadlines.
+      - The pressure at work is causing me a lot of stress.
+      - I'm overwhelmed with stress due to personal responsibilities.
+      - Managing my schedule is becoming too stressful.
+      - The constant demands of daily life are stressing me out.
+      - I feel stressed about upcoming exams.
+      - Financial worries are contributing to my stress.
+      - Juggling multiple tasks is causing me stress.
+      - I'm stressed about the uncertainty in my future.
+      - Balancing work and personal life is stressing me out.
+      - Relationship challenges are adding to my stress levels.
+      - The current state of the world is causing me stress.
+      - I'm feeling stressed due to health concerns.
+      - Social situations are triggering stress for me.
+      - The pressure to meet expectations is causing stress.
+      - I'm stressed about not meeting my own expectations.
+      - Family responsibilities are overwhelming and causing stress.
+      - Coping with change is contributing to my stress.
+      - I feel stressed about the lack of time for self-care.
+      - The workload at school is causing me stress.
+
+  - intent: emergency_instructions
+    examples: |
+      - What should I do in a mental health emergency?
+      - Can you provide emergency instructions for a crisis?
+      - In an emergency, what steps should I take?
+      - What's the procedure during a mental health crisis?
+      - Are there specific instructions for urgent situations?
+      - How should I handle a mental health emergency?
+      - In case of a crisis, what actions should I take?
+      - What are the steps to follow during a mental health emergency?
+      - Can you guide me on what to do in urgent mental health situations?
+      - If it's an emergency, what instructions do you have for me?
+
+
+
+
+
+
