@@ -98,29 +98,6 @@ def generate_dynamic_html(predicted_emotion: str,name: str) -> str:
                 margin-left: auto;
                 margin-right: auto;
             }}
-            .bar-graph {{
-                display: flex;
-                flex-direction: column;
-                align-items: start;
-                margin-top: 1rem;
-            }}
-            .bar {{
-                height: 1rem;
-                margin-bottom: 0.5rem;
-                flex-grow: 1;
-                border-radius: 0.5rem;
-                background-color: #f0f0f0;
-                background-color: #51c054;
-            }}
-            .row {{
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                gap: 1rem;
-            }}
-            .label{{
-                font-weight: 600;
-            }}
         </style>
     </head>
     <body>
