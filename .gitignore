@@ -91,6 +91,6 @@ rasa/keys
 rasa.code-workspace
 
 tf_model.h5
-tf_model.prepoc
+tf_model.preproc
 /actions/__pycache__
 
