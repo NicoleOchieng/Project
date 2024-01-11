@@ -408,7 +408,7 @@ responses:
 actions:
   - action_generate_report
   - action_hello_world
-  - action_default_fallback
+  - action_default_feedback
 
 session_config:
   session_expiration_time: 60
